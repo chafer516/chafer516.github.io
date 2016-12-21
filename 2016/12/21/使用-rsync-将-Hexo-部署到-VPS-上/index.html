@@ -3,14 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | 金龟子个人博客</title>
+  <title>使用 rsync 将 Hexo 部署到 VPS 上 | 金龟子个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="金龟子个人博客">
-<meta property="og:url" content="http://chuangyebi.win/archives/index.html">
+  <meta name="description" content="一、在 Hexo 目录下安装 rsync1$ npm install hexo-deployer-rsync --save
+根据 Hexo rsync 部署文档 在 Hexo 中的 _config.yml 中添加 Deploy 的配置，以下是我在自己项目中的配置代码123456789deploy:  type: rsync  host: 你 VPS 的 IP 地址或者域名  user: root">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 rsync 将 Hexo 部署到 VPS 上">
+<meta property="og:url" content="http://chuangyebi.win/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/index.html">
 <meta property="og:site_name" content="金龟子个人博客">
+<meta property="og:description" content="一、在 Hexo 目录下安装 rsync1$ npm install hexo-deployer-rsync --save
+根据 Hexo rsync 部署文档 在 Hexo 中的 _config.yml 中添加 Deploy 的配置，以下是我在自己项目中的配置代码123456789deploy:  type: rsync  host: 你 VPS 的 IP 地址或者域名  user: root">
+<meta property="og:updated_time" content="2016-12-21T01:45:29.416Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="金龟子个人博客">
+<meta name="twitter:title" content="使用 rsync 将 Hexo 部署到 VPS 上">
+<meta name="twitter:description" content="一、在 Hexo 目录下安装 rsync1$ npm install hexo-deployer-rsync --save
+根据 Hexo rsync 部署文档 在 Hexo 中的 _config.yml 中添加 Deploy 的配置，以下是我在自己项目中的配置代码123456789deploy:  type: rsync  host: 你 VPS 的 IP 地址或者域名  user: root">
   
     <link rel="alternative" href="/atom.xml" title="金龟子个人博客" type="application/atom+xml">
   
@@ -36,8 +43,8 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
-          isArchive: true,
+          isPost: true,
+          isArchive: false,
           isTag: false,
           isCategory: false,
           open_in_new: false
@@ -212,81 +219,195 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-使用-rsync-将-Hexo-部署到-VPS-上" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/" class="archive-article-date">
-      <time datetime="2016-12-21T01:37:37.000Z" itemprop="datePublished">12-21</time>
+    <div class="article-meta">
+      <a href="/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/" class="article-date">
+      <time datetime="2016-12-21T01:37:37.000Z" itemprop="datePublished">2016-12-21</time>
 </a>
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/">使用 rsync 将 Hexo 部署到 VPS 上</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      使用 rsync 将 Hexo 部署到 VPS 上
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+      </div>
+      
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/12/19/hello-world/" class="archive-article-date">
-      <time datetime="2016-12-19T05:07:29.927Z" itemprop="datePublished">12-19</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
+    <div class="article-entry" itemprop="articleBody">
+      
           
+        <h3 id="一、在-Hexo-目录下安装-rsync"><a href="#一、在-Hexo-目录下安装-rsync" class="headerlink" title="一、在 Hexo 目录下安装 rsync"></a>一、在 Hexo 目录下安装 rsync</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-rsync --save</div></pre></td></tr></table></figure>
+<p>根据 Hexo rsync 部署文档 在 Hexo 中的 _config.yml 中添加 Deploy 的配置，以下是我在自己项目中的配置代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: rsync</div><div class="line">  host: 你 VPS 的 IP 地址或者域名</div><div class="line">  user: root</div><div class="line">  root: 你想将 Hexo 生成的静态文件存放在 VPS 中的目录 例如: /www/hexo/blog/</div><div class="line">  port: 你 VPS 的 ssh 端口号</div><div class="line">  delete: <span class="literal">true</span></div><div class="line">  verbose: <span class="literal">true</span></div><div class="line">  ignore_errors: <span class="literal">false</span></div></pre></td></tr></table></figure></p>
+<p>*必须先在 VPS 上创建好了想要存放 Hexo 静态文件的目录， rsync 不能创建不存在的目录</p>
+<h3 id="二、VPS上的部署"><a href="#二、VPS上的部署" class="headerlink" title="二、VPS上的部署"></a>二、VPS上的部署</h3><p>我看网上有的朋友说光在 Hexo 中使用 rsync 不够，在 VPS 也需要下载 rsync 服务，如果你在 Hexo 中用 rsync 部署的时候一直报错，那就在 VPS 上下载 rsync 服务，看能否解决一直出错的原因，命令如下：</p>
+<pre><code class="bash">$ yum -y install rsync
+</code></pre>
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/">使用 rsync 将 Hexo 部署到 VPS 上</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 金龟子 的个人博客">金龟子</a></p>
+        <p><span>发布时间:</span>2016年12月21日 - 09时37分</p>
+        <p><span>最后更新:</span>2016年12月21日 - 09时45分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/" title="使用 rsync 将 Hexo 部署到 VPS 上">http://chuangyebi.win/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://chuangyebi.win/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/　　作者: 金龟子" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、在-Hexo-目录下安装-rsync"><span class="toc-number">1.</span> <span class="toc-text">一、在 Hexo 目录下安装 rsync</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、VPS上的部署"><span class="toc-number">2.</span> <span class="toc-text">二、VPS上的部署</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/" data-title="使用 rsync 将 Hexo 部署到 VPS 上" data-url="http://chuangyebi.win/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
 
     
 
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/12/19/hello-world/" title="下一篇: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/">使用 rsync 将 Hexo 部署到 VPS 上</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/19/hello-world/">Hello World</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -351,17 +472,6 @@
         };
     })
 </script>
-
-    <button class="hide-labels">TAG 开关</button>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".article-info").toggle(200);
-            });
-        });
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

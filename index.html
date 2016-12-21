@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="金龟子个人博客">
-<meta property="og:url" content="‘http://chuangyebi.win’/index.html">
+<meta property="og:url" content="http://chuangyebi.win/index.html">
 <meta property="og:site_name" content="金龟子个人博客">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="金龟子个人博客">
@@ -141,7 +141,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
                     </div>
                 </section>
                 
@@ -216,6 +216,69 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-使用-rsync-将-Hexo-部署到-VPS-上" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/" class="article-date">
+      <time datetime="2016-12-21T01:37:37.000Z" itemprop="datePublished">2016-12-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/21/使用-rsync-将-Hexo-部署到-VPS-上/">使用 rsync 将 Hexo 部署到 VPS 上</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="一、在-Hexo-目录下安装-rsync"><a href="#一、在-Hexo-目录下安装-rsync" class="headerlink" title="一、在 Hexo 目录下安装 rsync"></a>一、在 Hexo 目录下安装 rsync</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-rsync --save</div></pre></td></tr></table></figure>
+<p>根据 Hexo rsync 部署文档 在 Hexo 中的 _config.yml 中添加 Deploy 的配置，以下是我在自己项目中的配置代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: rsync</div><div class="line">  host: 你 VPS 的 IP 地址或者域名</div><div class="line">  user: root</div><div class="line">  root: 你想将 Hexo 生成的静态文件存放在 VPS 中的目录 例如: /www/hexo/blog/</div><div class="line">  port: 你 VPS 的 ssh 端口号</div><div class="line">  delete: <span class="literal">true</span></div><div class="line">  verbose: <span class="literal">true</span></div><div class="line">  ignore_errors: <span class="literal">false</span></div></pre></td></tr></table></figure></p>
+<p>*必须先在 VPS 上创建好了想要存放 Hexo 静态文件的目录， rsync 不能创建不存在的目录</p>
+<h3 id="二、VPS上的部署"><a href="#二、VPS上的部署" class="headerlink" title="二、VPS上的部署"></a>二、VPS上的部署</h3><p>我看网上有的朋友说光在 Hexo 中使用 rsync 不够，在 VPS 也需要下载 rsync 服务，如果你在 Hexo 中用 rsync 部署的时候一直报错，那就在 VPS 上下载 rsync 服务，看能否解决一直出错的原因，命令如下：</p>
+<pre><code class="bash">$ yum -y install rsync
+</code></pre>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
